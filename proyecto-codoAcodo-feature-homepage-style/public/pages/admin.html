@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Admin</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="/index.html"><img src="../img/branding/logo_light_horizontal.svg"
+                        alt="Isologotipo de la marca Funkoshop"></a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">SALIR</a>
+                </li>
+            </ul>
+            <button class="menu-btn">&#9776;</button>
+
+        </nav>
+    </header>
+    <main>
+        <aside>
+        
+            <div id="productos-header">
+                <!-- Barra de búsqueda -->
+                <input type="text" id="busqueda" placeholder="Buscar por nombre">
+            </div>
+            
+            <div id="productos-actions">
+                <!-- Título "Lista de Productos" -->
+                <h1>Lista de Productos</h1>
+            
+                <!-- Botón "Agregar" -->
+                <button class="bt-agregar" onclick="agregarProducto()">Agregar</button>
+            </div>
+            
+
+            <!-- Tabla de productos -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Código</th>
+                        <th>Nombre del Producto</th>
+                        <th>Categoría</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="productos"></tbody>
+            </table>
+    </main>
+
+
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a class="navbar__link" href="./pages/shop.html">SHOP</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/register.html">REGISTRARSE</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/login.html">LOGIN</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/contact.html">CONTACTO</a></li>
+            </ul>
+            <picture>
+                <img src="../img/branding/isotype.svg" href="/index.html" alt="Isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All right reserved 2023 - Funkoshop &copy</p>
+    </footer>
+    <script src="../js/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
+
+</html>
